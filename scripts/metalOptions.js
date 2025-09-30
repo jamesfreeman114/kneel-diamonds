@@ -5,7 +5,6 @@ export const metalOptions = async () => {
 
     let html = `
         <div class = "metal-input">
-            <h2>Metals</h2>
 
     `
     const metalChoicesHTML = options.map (
