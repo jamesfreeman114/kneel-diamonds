@@ -6,16 +6,28 @@ const transientState = {
 
 export const setMetalId = (chosenOwnership) => {
     transientState.metalId = chosenOwnership
-    console.log(transientState)
-   
+
 }
 
 export const setSizeId = (chosenOwnership) => {
     transientState.sizeId = chosenOwnership
-    console.log(transientState)
+
 }
 
 export const setStyleId = (chosenOwnership) => {
     transientState.styleId = chosenOwnership
-    console.log(transientState)
+
+}
+
+export const placeOrder = async () => {
+    const postOptions = {
+        method: "POST",
+        headers: {
+        "Content-Type": "application/json"    
+        },
+        body: JSON.stringify(transientState)
+    }
+
+    const response = await fetch("http://localhost:8088/orders", postOptions)
+
 }
