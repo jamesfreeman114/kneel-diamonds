@@ -1,6 +1,7 @@
 import { metalOptions } from "./metalOptions.js";
 import { SizeOptions } from "./sizesOptions.js";
 import { StyleOptions } from "./stylesOptions.js";
+import { orderSubmissionButton } from "./orderButton.js";
 
 const container = document.querySelector("#container")
 
@@ -8,6 +9,7 @@ const render = async () => {
     const metalOptionsHTML = await metalOptions()
     const sizeOptionsHTML = await SizeOptions()
     const styleOptionsHTML = await StyleOptions()
+    const orderSubmissionHTML = await orderSubmissionButton()
     
     const composedHTML = `
         <h1>Kneel Diamonds</h1>
@@ -31,6 +33,7 @@ const render = async () => {
         </article>
 
         <article class="order">
+                ${orderSubmissionHTML}
 
         </article>
 
