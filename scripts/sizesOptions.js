@@ -1,4 +1,15 @@
+import { setSizeId } from "./transientState.js"
+
+const handleSizeChoice = (event) => {
+    if (event.target.name === "size" ) {
+        setSizeId(parseInt(event.target.value))
+    }
+}
+
 export const SizeOptions = async () => {
+
+    document.addEventListener("change", handleSizeChoice)
+
     const response = await fetch("http://localhost:8088/sizes")
 
     const sizeOptions = await response.json()
