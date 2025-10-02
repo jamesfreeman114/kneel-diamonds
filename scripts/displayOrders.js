@@ -7,11 +7,12 @@ export const Orders = async () => {
     let ordersHTML = orders.map(
         (order) => {
 
-            const orderPrice = order.metal.price + order.style.price + order.size.price 
+            const orderPrice = order.metal.price + order.style.price + order.size.price
+            const decimalPrice = orderPrice.toFixed(2) 
 
             return `
                 <section class="order-submission-container">
-                    <h3>Order #${order.id} Cost: ${orderPrice}</h3>
+                    Order #${order.id} Cost: $${decimalPrice}
                 </section>
             
             `

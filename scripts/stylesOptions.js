@@ -20,7 +20,11 @@ export const StyleOptions = async () => {
     `
     const styleOptionsHTML = stylesOptions.map (
         (styleOption) => {
-            return ` <input type="radio" name="style" value=${styleOption.id}/>${styleOption.style}`
+            return ` 
+            <div class="style-button">
+            <input type="radio" name="style" value=${styleOption.id}/>${styleOption.style}
+            </div>
+            `
 
         }
     )

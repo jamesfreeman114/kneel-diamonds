@@ -14,13 +14,16 @@ export const metalOptions = async () => {
     
     const metalOptions = await response.json()
 
-    let html = `
-        <div class = "metal-input">
+    let html = ` <div class ="metal-input">
 
     `
     const metalChoicesHTML = metalOptions.map (
         (metalOption) => {
-            return ` <input type="radio" name="metal" value=${metalOption.id}/>${metalOption.metal}`
+            return `
+            <div class ="metal-button">
+            <input type="radio" name="metal" value=${metalOption.id}/>${metalOption.metal}
+            </div>
+            `
 
         }
     )
