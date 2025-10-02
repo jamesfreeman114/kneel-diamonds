@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
+
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: "Comfortaa", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: "Patua One", serif;
+  letter-spacing: 2px;
+}
+
+
+.choices{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.choices__metals.options{
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted rgb(178, 25, 25);
+    padding: 1rem 1rem;
+    align-items: center
+
+}
+
+.metal-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.metal-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+}
+
+.choices__sizes.options{
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted rgb(178, 25, 25);
+    padding: 1rem 1rem;
+    align-items: center
+
+}
+
+.size-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.size-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+}
+
+
+
+.choices__styles.options{
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted rgb(178, 25, 25);
+    padding: 1rem 1rem;
+    align-items: center
+
+}
+
+.style-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.style-button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0.5rem 0.5rem;
+}
+
+
+
+.order-submission-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1rem 1rem;
+    
+}
+
+#order-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  display: block;
+  margin: 2rem auto;
+}
+
+#order-button:hover {
+  background-color: green;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
