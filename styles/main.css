@@ -102,6 +102,21 @@ h1,h2,h3,h4,h5,h6 {
     
 }
 
+
+.place-orders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 2rem;
+}
+
+.custom-orders {
+    display: flex;
+    align-items: space-between;
+    padding: 1rem 1rem;
+}
+
+
 #order-button {
   background-color: red;
   color: white;

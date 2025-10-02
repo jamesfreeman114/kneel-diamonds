@@ -70,90 +70,65 @@
       "price": 1241
     }
   ],
+  "customs": [
+    {
+      "id": 1,
+      "name": "Ring",
+      "multiplier": 1
+    },
+    {
+      "id": 2,
+      "name": "Earring",
+      "multiplier": 2
+    },
+    {
+      "id": 3,
+      "name": "Necklace",
+      "multiplier": 3
+    }
+  ],
   "orders": [
     {
-      "metalId": 2,
-      "sizeId": 3,
+      "metalId": 5,
+      "sizeId": 2,
       "styleId": 3,
+      "customId": 2,
       "id": 1
     },
     {
-      "metalId": 2,
-      "sizeId": 3,
-      "styleId": 3,
+      "metalId": 1,
+      "sizeId": 4,
+      "styleId": 2,
+      "customId": 1,
       "id": 2
     },
     {
-      "metalId": 5,
-      "sizeId": 3,
-      "styleId": 3,
+      "metalId": 1,
+      "sizeId": 1,
+      "styleId": 1,
+      "customId": 1,
       "id": 3
     },
     {
-      "metalId": 2,
-      "sizeId": 2,
-      "styleId": 3,
+      "metalId": 1,
+      "sizeId": 1,
+      "styleId": 1,
+      "customId": 2,
       "id": 4
     },
     {
-      "metalId": 5,
-      "sizeId": 5,
+      "metalId": 1,
+      "sizeId": 1,
       "styleId": 1,
+      "customId": 3,
       "id": 5
     },
     {
-      "metalId": 5,
-      "sizeId": 1,
+      "metalId": 1,
+      "sizeId": 5,
       "styleId": 2,
+      "customId": 2,
       "id": 6
-    },
-    {
-      "metalId": 1,
-      "sizeId": 3,
-      "styleId": 2,
-      "id": 7
-    },
-    {
-      "metalId": 2,
-      "sizeId": 2,
-      "styleId": 3,
-      "id": 8
-    },
-    {
-      "metalId": 2,
-      "sizeId": 3,
-      "styleId": 1,
-      "id": 9
-    },
-    {
-      "metalId": 1,
-      "sizeId": 2,
-      "styleId": 2,
-      "id": 10
-    },
-    {
-      "metalId": 5,
-      "sizeId": 1,
-      "styleId": 2,
-      "id": 11
-    },
-    {
-      "metalId": 2,
-      "sizeId": 4,
-      "styleId": 1,
-      "id": 12
-    },
-    {
-      "metalId": 1,
-      "sizeId": 1,
-      "styleId": 1,
-      "id": 13
-    },
-    {
-      "metalId": 5,
-      "sizeId": 1,
-      "styleId": 1,
-      "id": 14
     }
   ]
 }
