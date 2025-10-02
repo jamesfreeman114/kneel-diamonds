@@ -1,7 +1,8 @@
 const transientState = {
     metalId: 0,
     sizeId: 0,
-    styleId: 0
+    styleId: 0,
+    customId: 0
 }
 
 export const setMetalId = (chosenOwnership) => {
@@ -17,6 +18,10 @@ export const setSizeId = (chosenOwnership) => {
 export const setStyleId = (chosenOwnership) => {
     transientState.styleId = chosenOwnership
 
+}
+
+export const setCustomId = (chosenOwnership) => {
+    transientState.customId = chosenOwnership
 }
 
 export const placeOrder = async () => {
